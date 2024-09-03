@@ -58,7 +58,6 @@ import './theme/variables.css';
 
 const app = createApp({
   setup() {
-    // Apollo Clientを提供
     provide(DefaultApolloClient, apolloClient);
   },
   render: () => h(App),

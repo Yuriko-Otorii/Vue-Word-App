@@ -16,16 +16,16 @@ const routes: Array<RouteRecordRaw> = [
     component: () => import('@/views/authentication/SignupPage.vue')
   },
   {
-    path: '/tabs/',
+    path: '/wordly/',
     component: TabsPage,
     children: [
       {
         path: '',
-        redirect: '/tabs/tab1'
+        redirect: '/wordly/home'
       },
       {
-        path: 'tab1',
-        component: () => import('@/views/Tab1Page.vue')
+        path: 'home',
+        component: () => import('@/views/HomePage.vue')
       },
       {
         path: 'tab2',

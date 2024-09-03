@@ -4,7 +4,11 @@ export default {
   darkMode: false,
   mode: 'jit',
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'sans': ['Inter', 'sans-serif'],
+      },
+    },
   },
   variants: {
     extend: {},

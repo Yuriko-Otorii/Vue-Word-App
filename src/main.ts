@@ -3,6 +3,7 @@ import App from './App.vue'
 import router from './router';
 
 import { DefaultApolloClient } from '@vue/apollo-composable';
+import { setContext } from '@apollo/client/link/context';
 import {
   ApolloClient,
   createHttpLink,
@@ -16,13 +17,22 @@ import './index.css'
 
 /* Apollo setup */ 
 const httpLink = createHttpLink({
-  uri: 'http://localhost:8000/graphql',
+  uri: import.meta.env.VITE_APP_GRAPHQL_URI,
+});
+
+const authLink = setContext(() => {
+  const token = localStorage.getItem('token') || '{})';
+  return {
+    headers: {
+      authorization: `JWT ${token}`,
+    }
+  };
 });
 
 const cache = new InMemoryCache();
 
 const apolloClient = new ApolloClient({
-  link: httpLink,
+  link: authLink.concat(httpLink),
   cache,
 });
 

@@ -28,8 +28,9 @@
           </label>
         </div>
       </div>
-      <button type="submit" class="flex px-20 py-2 rounded-lg absolute bottom-[30%] left-1/2 transform -translate-x-1/2 bg-[#4289A7] text-lg text-white border ">
+      <button type="submit" class="flex justify-center w-[250px] px-20 py-2 rounded-lg absolute bottom-[30%] left-1/2 transform -translate-x-1/2 bg-[#4289A7] text-lg text-white border ">
         Login
+        <ion-spinner v-if="loading" name="crescent" class="ml-5 text-white"></ion-spinner>
       </button>
     </form>
 
@@ -42,34 +43,24 @@
 
 <script setup>
   import { ref } from 'vue';
+  import { useRouter } from 'vue-router';
   import { useMutation } from '@vue/apollo-composable';
-  import gql from 'graphql-tag';
+  import { loginMutation } from '@/graphql/mutation/login';
 
+  const router = useRouter();
   const emailInput = ref('');
   const passwordInput = ref('');
 
-  const { mutate } = useMutation(gql`
-    mutation login($email: String!, $password: String!) {
-      login(email: $email, password: $password) {
-        token
-        user {
-          id
-          username
-          email
-        }
-      }
-    }
-  `);
+  const { mutate, loading } = useMutation(loginMutation);
 
   const handleSubmit = async () => {    
     try {
       const { data } = await mutate({ email: emailInput.value, password: passwordInput.value });
       localStorage.setItem('token', data.login.token);
       localStorage.setItem('user', JSON.stringify(data.login.user));
+      router.push('/wordly/home');
     } catch (error) {
       console.error("error", error);
     }
   };
-  
-
 </script>

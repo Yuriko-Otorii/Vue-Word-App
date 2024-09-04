@@ -32,8 +32,8 @@ const routes: Array<RouteRecordRaw> = [
         component: () => import('@/views/WordRegisterPage.vue')
       },
       {
-        path: 'tab3',
-        component: () => import('@/views/Tab3Page.vue')
+        path: 'memory-test',
+        component: () => import('@/views/MemoryTestPage.vue')
       }
     ]
   }

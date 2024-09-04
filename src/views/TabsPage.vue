@@ -13,9 +13,9 @@
           <ion-label>register</ion-label>
         </ion-tab-button>
 
-        <ion-tab-button tab="tab3" href="/wordly/tab3">
-          <ion-icon aria-hidden="true" :icon="square" />
-          <ion-label>Tab 3</ion-label>
+        <ion-tab-button tab="memoryTest" href="/wordly/memory-test">
+          <ion-icon aria-hidden="true" :icon="book" />
+          <ion-label>Test</ion-label>
         </ion-tab-button>
       </ion-tab-bar>
     </ion-tabs>
@@ -23,6 +23,12 @@
 </template>
 
 <script setup lang="ts">
-import { IonTabBar, IonTabButton, IonTabs, IonLabel, IonIcon, IonPage, IonRouterOutlet } from '@ionic/vue';
-import { addCircle, square, home } from 'ionicons/icons';
+  import { IonTabBar, IonTabButton, IonTabs, IonLabel, IonIcon, IonPage, IonRouterOutlet } from '@ionic/vue';
+  import { home, addCircle, book } from 'ionicons/icons';
 </script>
+
+<style scoped>
+  ion-tab-button {
+    --color-selected: #C5DF16;
+  }
+</style>

@@ -1,6 +1,6 @@
 <template>
   <ion-page>
-    <ion-header>
+    <ion-header class="shadow-sm">
       <ion-toolbar>
         <ion-title>Home</ion-title>
       </ion-toolbar>

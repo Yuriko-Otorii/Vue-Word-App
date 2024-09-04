@@ -34,6 +34,10 @@ const routes: Array<RouteRecordRaw> = [
       {
         path: 'memory-test',
         component: () => import('@/views/MemoryTestPage.vue')
+      },
+      {
+        path: 'list',
+        component: () => import('@/views/WordListPage.vue')
       }
     ]
   }

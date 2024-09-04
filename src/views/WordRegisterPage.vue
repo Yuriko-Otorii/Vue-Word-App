@@ -1,6 +1,6 @@
 <template>
   <ion-page class="bg-[#79eefd]">
-    <ion-header class="shadow">
+    <ion-header class="shadow-sm">
       <ion-toolbar>
         <ion-title class="mx-auto">Word register</ion-title>
       </ion-toolbar>

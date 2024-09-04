@@ -28,8 +28,8 @@ const routes: Array<RouteRecordRaw> = [
         component: () => import('@/views/HomePage.vue')
       },
       {
-        path: 'tab2',
-        component: () => import('@/views/Tab2Page.vue')
+        path: 'register',
+        component: () => import('@/views/WordRegisterPage.vue')
       },
       {
         path: 'tab3',

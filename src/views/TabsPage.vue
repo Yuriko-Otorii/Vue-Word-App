@@ -8,9 +8,9 @@
           <ion-label>Home</ion-label>
         </ion-tab-button>
 
-        <ion-tab-button tab="tab2" href="/wordly/tab2">
-          <ion-icon aria-hidden="true" :icon="ellipse" />
-          <ion-label>Tab 2</ion-label>
+        <ion-tab-button tab="register" href="/wordly/register">
+          <ion-icon aria-hidden="true" :icon="addCircle" />
+          <ion-label>register</ion-label>
         </ion-tab-button>
 
         <ion-tab-button tab="tab3" href="/wordly/tab3">
@@ -24,5 +24,5 @@
 
 <script setup lang="ts">
 import { IonTabBar, IonTabButton, IonTabs, IonLabel, IonIcon, IonPage, IonRouterOutlet } from '@ionic/vue';
-import { ellipse, square, home } from 'ionicons/icons';
+import { addCircle, square, home } from 'ionicons/icons';
 </script>

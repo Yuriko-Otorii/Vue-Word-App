@@ -37,11 +37,23 @@
     modalController,
   } from '@ionic/vue';
   import { ref } from 'vue';
+  import axios from 'axios';
+
+
   const categoryName = ref();
 
   const cancel = () => modalController.dismiss(null, 'cancel');
   
-  const handleCreateCategory = () => {
+  const handleCreateCategory = async () => {
+    try {
+      const response = await axios.post('http://localhost:5000/category', {
+        name: categoryName.value,
+      });
+      console.log(response.data);
+      
+    } catch (error) {
+      console.error(error);
+    }
     modalController.dismiss(categoryName.value, 'create');
   };
 </script>

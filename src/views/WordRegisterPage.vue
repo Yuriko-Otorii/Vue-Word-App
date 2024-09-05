@@ -6,7 +6,7 @@
       </ion-toolbar>
     </ion-header>
     <ion-content :fullscreen="true" class="ion-padding">
-      <form @submit.prevent="handleSubmit" class="flex flex-col gap-5 px-2 pt-5">
+      <form @submit.prevent="handleWordSubmit" class="flex flex-col gap-5 px-2 pt-5">
         <div class="flex flex-col">
           <label class="block text-gray-700 text-sm font-bold mb-2">
             Category
@@ -87,7 +87,7 @@
     }
   };
 
-  const handleSubmit = async () => {
+  const handleWordSubmit = async () => {
     try {
       const response = await axios.post('http://localhost:5000/words', {
         word: wordInput.value,

@@ -19,7 +19,7 @@
 </template>
 
 <script setup lang=ts>
-  import { IonButton, IonCard, IonCardContent } from '@ionic/vue';
+  import { IonButton, IonCard, IonCardContent, IonSpinner } from '@ionic/vue';
   import { defineProps, ref } from 'vue';
   import { useRouter } from 'vue-router';
 

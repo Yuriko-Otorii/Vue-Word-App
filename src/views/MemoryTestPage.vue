@@ -9,7 +9,7 @@
 
       <div v-if="testPhase === 'start'" class="w-full flex flex-col items-center gap-10 mt-20">
         <h1 class="text-3xl">Are you ready?</h1>
-        <p class="text-xl">Memory Process:<span class="ml-1">{{ route.query.data }}</span>/4</p>
+        <p class="text-xl">Memory Process:<span class="ml-1">1</span>/4</p>
         <button type="button" @click="handleStartTest" class="flex justify-center w-[250px] px-20 py-2 mt-20 rounded-lg bg-[#79eefd] text-lg text-white font-bold border">Start</button>
       </div>
 
@@ -42,14 +42,12 @@
   import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent, IonIcon } from '@ionic/vue';
   import { returnUpBackOutline } from 'ionicons/icons';
   import { ref, onMounted, onUnmounted } from 'vue';
-  import { useRoute } from 'vue-router';
   import axios from 'axios';
 
   import TestWord from '@/components/TestWord.vue';
   import ReviewWord from '@/components/ReviewWord.vue';
   import { CardItem } from '@/types/type';
 
-  const route = useRoute();
   const testPhase = ref("start");
   const testWords = ref<CardItem[]>([]);
   const isTimeOver = ref(false);

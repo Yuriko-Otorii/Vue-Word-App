@@ -45,7 +45,7 @@
 </template>
 
 <script setup lang="ts">
-    import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent, IonSearchbar, IonIcon } from '@ionic/vue';
+    import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent, IonSearchbar, IonIcon, IonList } from '@ionic/vue';
     import { arrowBack, filter } from 'ionicons/icons';
     import { ref } from 'vue';
 

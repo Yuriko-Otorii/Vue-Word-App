@@ -58,6 +58,7 @@
   import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent, IonIcon, IonSelect, IonSelectOption, modalController  } from '@ionic/vue';
   import { addOutline } from 'ionicons/icons';
   import { ref } from 'vue';
+  import axios from 'axios';
 
   import CategoryCreateModal from '@/components/CategoryCreateModal.vue';
 
@@ -87,6 +88,38 @@
   };
 
   const handleSubmit = async () => {
+    try {
+      const response = await axios.post('http://localhost:5000/words', {
+        word: wordInput.value,
+        definition: definitionInput.value,
+        example: exampleInput.value,
+        category: categorySelect.value,
+        memoryProcess: "1",
+        hide: true,
+        options: [
+          {
+            definition: definitionInput.value,
+            isCorrect: true,
+          },
+          {
+            definition: "to succeed in avoiding punishment for something",
+            isCorrect: false,
+          },
+          {
+            definition: "a large African animal with a very long neck and long legs",
+            isCorrect: false,
+          },
+          {
+            definition: "a doctor who treats children",
+            isCorrect: false,
+          },
+        ],
+      });
+      console.log(response.data);
+      
+    } catch (error) {
+      console.log(error);      
+    }
     console.log(wordInput.value, definitionInput.value, exampleInput.value, categorySelect.value);
   }
 </script>

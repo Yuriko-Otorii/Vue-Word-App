@@ -736,109 +736,28 @@
           }
         ]
       }
-    ],
-    {
-      "id": "8c24",
-      "word": "Dog",
-      "definition": "An animal",
-      "example": "Dog is cute",
-      "category": "Animal",
-      "memoryProcess": "1",
-      "hide": true,
-      "options": [
-        {
-          "definition": "An animal",
-          "isCorrect": true
-        },
-        {
-          "definition": "to succeed in avoiding punishment for something",
-          "isCorrect": false
-        },
-        {
-          "definition": "a large African animal with a very long neck and long legs",
-          "isCorrect": false
-        },
-        {
-          "definition": "a doctor who treats children",
-          "isCorrect": false
-        }
-      ]
-    },
-    {
-      "id": "e515",
-      "word": "",
-      "definition": "",
-      "example": "",
-      "category": "",
-      "memoryProcess": "1",
-      "hide": true,
-      "options": [
-        {
-          "definition": "",
-          "isCorrect": true
-        },
-        {
-          "definition": "to succeed in avoiding punishment for something",
-          "isCorrect": false
-        },
-        {
-          "definition": "a large African animal with a very long neck and long legs",
-          "isCorrect": false
-        },
-        {
-          "definition": "a doctor who treats children",
-          "isCorrect": false
-        }
-      ]
-    },
-    {
-      "id": "1e0f",
-      "word": "",
-      "definition": "",
-      "example": "",
-      "category": "",
-      "memoryProcess": "1",
-      "hide": true,
-      "options": [
-        {
-          "definition": "",
-          "isCorrect": true
-        },
-        {
-          "definition": "to succeed in avoiding punishment for something",
-          "isCorrect": false
-        },
-        {
-          "definition": "a large African animal with a very long neck and long legs",
-          "isCorrect": false
-        },
-        {
-          "definition": "a doctor who treats children",
-          "isCorrect": false
-        }
-      ]
-    }
+    ]
   ],
   "category": [
     {
       "id": "1",
-      "name": "adjective"
+      "name": "all words"
     },
     {
       "id": "2",
-      "name": "animal"
+      "name": "adjective"
     },
     {
       "id": "3",
-      "name": "phrasal verb"
+      "name": "animal"
     },
     {
       "id": "4",
-      "name": "doctors"
+      "name": "phrasal verb"
     },
     {
-      "id": "70c7",
-      "name": "Business"
+      "id": "5",
+      "name": "doctors"
     }
   ]
 }

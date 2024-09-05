@@ -22,6 +22,7 @@
           >
             <p>{{ category.name }}</p>
             <p>
+              <span v-if="category.name === 'all words'">{{ allWords.length }}</span>
               <span v-if="category.name === 'adjective'">{{ wordsInAsjectives.length }}</span>
               <span v-if="category.name === 'animal'">{{ wordsInAnimals.length }}</span>
               <span v-if="category.name === 'phrasal verb'">{{ wordsInPhrasalVerbs.length }}</span>
@@ -73,6 +74,7 @@
     const wordsInPhrasalVerbs = ref<CardItem[]>([]);
     const wordsInDoctors = ref<CardItem[]>([]);
     const selectedCategory = ref<CardItem[]>([]);
+    const allWords = ref<CardItem[]>([]);
     const selectedCategoryName = ref<string>("");
     const clickedWord = ref<number>();
     const phase = ref("selectCategory");
@@ -96,6 +98,8 @@
         selectedCategory.value = wordsInPhrasalVerbs.value;
       } else if (category === "doctors") {
         selectedCategory.value = wordsInDoctors.value;
+      } else if (category === "all words") {
+        selectedCategory.value = allWords.value;
       } else {
         selectedCategory.value = [];
       }
@@ -132,6 +136,19 @@
         wordsInAnimals.value = words2;
         wordsInPhrasalVerbs.value = words3;
         wordsInDoctors.value = words4;
+        
+        wordsInAsjectives.value.forEach((item: CardItem) => {
+          allWords.value.push(item);
+        });
+        wordsInAnimals.value.forEach((item: CardItem) => {
+          allWords.value.push(item);
+        });
+        wordsInPhrasalVerbs.value.forEach((item: CardItem) => {
+          allWords.value.push(item);
+        });
+        wordsInDoctors.value.forEach((item: CardItem) => {
+          allWords.value.push(item);
+        });
         
       } catch (error) {
         console.log(error);

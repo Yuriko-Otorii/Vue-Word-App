@@ -1,0 +1,408 @@
+{
+  "words": [
+    [
+      {
+        "id": 1,
+        "word": "impeccable",
+        "category": "adjective",
+        "definition": "perfect, with no problems or bad parts",
+        "example": "His English is impeccable.",
+        "memoryProcess": "1",
+        "options": [
+          {"correct": "perfect, with no problems or bad parts"},
+          {"incorrect": "extremely surprised or shocked"},
+          {"incorrect": "very beautiful and delicate"},
+          {"incorrect": "very surprising"}
+        ]
+      },
+      {
+        "id": 2,
+        "word": "flabbergasted",
+        "category": "adjective",
+        "definition": "extremely surprised or shocked",
+        "example": "I was flabbergasted when I heard the news.",
+        "memoryProcess": "1",
+        "options": [
+          {"correct": "extremely surprised or shocked"},
+          {"incorrect": "perfect, with no problems or bad parts"},
+          {"incorrect": "very beautiful and delicate"},
+          {"incorrect": "very surprising"}
+        ]
+      },
+      {
+        "id": 3,
+        "word": "exquisite",
+        "category": "adjective",
+        "definition": "very beautiful and delicate",
+        "example": "The food was absolutely exquisite.",
+        "memoryProcess": "1",
+        "options": [
+          {"correct": "very beautiful and delicate"},
+          {"incorrect": "extremely surprised or shocked"},
+          {"incorrect": "perfect, with no problems or bad parts"},
+          {"incorrect": "very surprising"}
+        ]
+      },
+      {
+        "id": 4,
+        "word": "astounding",
+        "category": "adjective",
+        "definition": "very surprising",
+        "example": "The results were absolutely astounding.",
+        "memoryProcess": "1",
+        "options": [
+          {"correct": "very surprising"},
+          {"incorrect": "extremely surprised or shocked"},
+          {"incorrect": "perfect, with no problems or bad parts"},
+          {"incorrect": "very beautiful and delicate"}
+        ]
+      },
+      {
+        "id": 5,
+        "word": "phenomenal",
+        "category": "adjective",
+        "definition": "extremely successful or special, especially in a surprising way",
+        "example": "The band was absolutely phenomenal.",
+        "memoryProcess": "1",
+        "options": [
+          {"correct": "extremely successful or special, especially in a surprising way"},
+          {"incorrect": "extremely surprised or shocked"},
+          {"incorrect": "perfect, with no problems or bad parts"},
+          {"incorrect": "very beautiful and delicate"}
+        ]
+      }
+    ],
+    [
+      {
+        "id": 6,
+        "word": "porcupine",
+        "category": "animal",
+        "definition": "an animal with a covering of long, sharp quills",
+        "example": "",
+        "memoryProcess": "2",
+        "options": [
+          {"correct": "an animal with a covering of long, sharp quills"},
+          {"incorrect": "a small, egg-laying mammal with a leathery bill and webbed feet"},
+          {"incorrect": "a large African animal with a very long neck and long legs"},
+          {"incorrect": "a large black and white bird that cannot fly but uses its small wings to help it swim"}
+        ]
+      },
+      {
+        "id": 7,
+        "word": "platypus",
+        "category": "animal",
+        "definition": "a small, egg-laying mammal with a leathery bill and webbed feet",
+        "example": "",
+        "memoryProcess": "2",
+        "options": [
+          {"correct": "a small, egg-laying mammal with a leathery bill and webbed feet"},
+          {"incorrect": "an animal with a covering of long, sharp quills"},
+          {"incorrect": "a large African animal with a very long neck and long legs"},
+          {"incorrect": "a large black and white bird that cannot fly but uses its small wings to help it swim"}
+        ]
+      },
+      {
+        "id": 8,
+        "word": "giraffe",
+        "category": "animal",
+        "definition": "a large African animal with a very long neck and long legs",
+        "example": "",
+        "memoryProcess": "2",
+        "options": [
+          {"correct": "a large African animal with a very long neck and long legs"},
+          {"incorrect": "a small, egg-laying mammal with a leathery bill and webbed feet"},
+          {"incorrect": "an animal with a covering of long, sharp quills"},
+          {"incorrect": "a large black and white bird that cannot fly but uses its small wings to help it swim"}
+        ]
+      },
+      {
+        "id": 9,
+        "word": "penguin",
+        "category": "animal",
+        "definition": "a large black and white bird that cannot fly but uses its small wings to help it swim",
+        "example": "",
+        "memoryProcess": "2",
+        "options": [
+          {"correct": "a large black and white bird that cannot fly but uses its small wings to help it swim"},
+          {"incorrect": "a small, egg-laying mammal with a leathery bill and webbed feet"},
+          {"incorrect": "a large African animal with a very long neck and long legs"},
+          {"incorrect": "an animal with a covering of long, sharp quills"}
+        ]
+      },
+      {
+        "id": 10,
+        "word": "rhinoceros",
+        "category": "animal",
+        "definition": "a very large, thick-skinned animal from Africa or India that has one or two horns on its nose",
+        "example": "",
+        "memoryProcess": "2",
+        "options": [
+          {"correct": "a very large, thick-skinned animal from Africa or India that has one or two horns on its nose"},
+          {"incorrect": "a small, egg-laying mammal with a leathery bill and webbed feet"},
+          {"incorrect": "a large African animal with a very long neck and long legs"},
+          {"incorrect": "an animal with a covering of long, sharp quills"}
+        ]
+      },
+      {
+        "id": 21,
+        "word": "kookaburra",
+        "category": "animal",
+        "definition": "a large Australian bird that lives in trees and makes a strange sound like a person laughing",
+        "example": "",
+        "memoryProcess": "2",
+        "options": [
+          {"correct": "a large Australian bird that lives in trees and makes a strange sound like a person laughing"},
+          {"incorrect": "a small, egg-laying mammal with a leathery bill and webbed feet"},
+          {"incorrect": "a large African animal with a very long neck and long legs"},
+          {"incorrect": "an animal with a covering of long, sharp quills"}
+        ]
+      },
+      {
+        "id": 22,
+        "word": "binturong",
+        "category": "animal",
+        "definition": "a type of civet (= small cat-like animal) that has a long tail and black fur and lives in trees in south and southeast Asia",
+        "example": "",
+        "memoryProcess": "2",
+        "options": [
+          {"correct": "a type of civet (= small cat-like animal) that has a long tail and black fur and lives in trees in south and southeast Asia"},
+          {"incorrect": "a small, egg-laying mammal with a leathery bill and webbed feet"},
+          {"incorrect": "a large African animal with a very long neck and long legs"},
+          {"incorrect": "an animal with a covering of long, sharp quills"}
+        ]
+      }
+    ],
+    [
+      {
+        "id": 11,
+        "word": "gun someone down",
+        "category": "phrasal verb",
+        "definition": "to shoot someone with a gun",
+        "example": "The police gunned him down in the street.",
+        "memoryProcess": "3",
+        "options": [
+          {"correct": "to shoot someone with a gun"},
+          {"incorrect": "to succeed in avoiding punishment for something"},
+          {"incorrect": "to provide someone with a place to stay temporarily"},
+          {"incorrect": "to have no more of something"}
+        ]
+      },
+      {
+        "id": 12,
+        "word": "get away with",
+        "category": "phrasal verb",
+        "definition": "to succeed in avoiding punishment for something",
+        "example": "He thought he could get away with cheating in the exam.",
+        "memoryProcess": "3",
+        "options": [
+          {"correct": "to succeed in avoiding punishment for something"},
+          {"incorrect": "to shoot someone with a gun"},
+          {"incorrect": "to provide someone with a place to stay temporarily"},
+          {"incorrect": "to have no more of something"}
+        ]
+      },
+      {
+        "id": 13,
+        "word": "put someone up",
+        "category": "phrasal verb",
+        "definition": "to provide someone with a place to stay temporarily",
+        "example": "I can put you up for the night if you like.",
+        "memoryProcess": "3",
+        "options": [
+          {"correct": "to provide someone with a place to stay temporarily"},
+          {"incorrect": "to shoot someone with a gun"},
+          {"incorrect": "to succeed in avoiding punishment for something"},
+          {"incorrect": "to have no more of something"}
+        ]
+      },
+      {
+        "id": 14,
+        "word": "run out of",
+        "category": "phrasal verb",
+        "definition": "to have no more of something",
+        "example": "We've run out of milk.",
+        "memoryProcess": "3",
+        "options": [
+          {"correct": "to have no more of something"},
+          {"incorrect": "to shoot someone with a gun"},
+          {"incorrect": "to succeed in avoiding punishment for something"},
+          {"incorrect": "to provide someone with a place to stay temporarily"}
+        ]
+      },
+      {
+        "id": 15,
+        "word": "take after",
+        "category": "phrasal verb",
+        "definition": "to be similar to an older member of your family",
+        "example": "She takes after her mother.",
+        "memoryProcess": "3",
+        "options": [
+          {"correct": "to be similar to an older member of your family"},
+          {"incorrect": "to shoot someone with a gun"},
+          {"incorrect": "to succeed in avoiding punishment for something"},
+          {"incorrect": "to provide someone with a place to stay temporarily"}
+        ]
+      },
+      {
+        "id": 23,
+        "word": "show off",
+        "category": "phrasal verb",
+        "definition": "to behave in a way that is intended to attract attention or admiration, and that other people often find annoying",
+        "example": "He's always showing off to his classmates.",
+        "memoryProcess": "3",
+        "options": [
+          {"correct": "to behave in a way that is intended to attract attention or admiration, and that other people often find annoying"},
+          {"incorrect": "to shoot someone with a gun"},
+          {"incorrect": "to succeed in avoiding punishment for something"},
+          {"incorrect": "to provide someone with a place to stay temporarily"}
+        ]
+      },
+      {
+        "id": 24,
+        "word": "come down with",
+        "category": "phrasal verb",
+        "definition": "to start to suffer from an illness, especially one that is not serious",
+        "example": "I think I'm coming down with flu",
+        "memoryProcess": "3",
+        "options": [
+          {"correct": "to start to suffer from an illness, especially one that is not serious"},
+          {"incorrect": "to shoot someone with a gun"},
+          {"incorrect": "to succeed in avoiding punishment for something"},
+          {"incorrect": "to provide someone with a place to stay temporarily"}
+        ]
+      },
+      {
+        "id": 25,
+        "word": "get something across",
+        "category": "phrasal verb",
+        "definition": "to manage to make someone understand or believe something",
+        "example": "We tried to get our point across, but he just wouldn't listen.",
+        "memoryProcess": "3",
+        "options": [
+          {"correct": "to manage to make someone understand or believe something"},
+          {"incorrect": "to shoot someone with a gun"},
+          {"incorrect": "to succeed in avoiding punishment for something"},
+          {"incorrect": "to provide someone with a place to stay temporarily"}
+        ]
+      },
+      {
+        "id": 26,
+        "word": "think something over",
+        "category": "phrasal verb",
+        "definition": "to consider an idea or plan carefully before making a decision",
+        "example": "I'll think it over and give you an answer next week.",
+        "memoryProcess": "3",
+        "options": [
+          {"correct": "to consider an idea or plan carefully before making a decision"},
+          {"incorrect": "to shoot someone with a gun"},
+          {"incorrect": "to succeed in avoiding punishment for something"},
+          {"incorrect": "to provide someone with a place to stay temporarily"}
+        ]
+      },
+      {
+        "id": 27,
+        "word": "wait something out",
+        "category": "phrasal verb",
+        "definition": "to wait until something unpleasant has ended",
+        "example": "I'd rather wait out the storm than drive home immediately.",
+        "memoryProcess": "3",
+        "options": [
+          {"correct": "to wait until something unpleasant has ended"},
+          {"incorrect": "to shoot someone with a gun"},
+          {"incorrect": "to succeed in avoiding punishment for something"},
+          {"incorrect": "to provide someone with a place to stay temporarily"}
+        ]
+      }
+    ],
+    [
+      {
+        "id": 16,
+        "word": "ophthalmologist",
+        "category": "doctors",
+        "definition": "a doctor who treats eye diseases",
+        "example": "",
+        "memoryProcess": "4",
+        "options": [
+          {"correct": "a doctor who treats eye diseases"},
+          {"incorrect": "a doctor who treats skin diseases"},
+          {"incorrect": "a doctor who treats children"},
+          {"incorrect": "a doctor who treats heart diseases"}
+        ]
+      },
+      {
+        "id": 17,
+        "word": "dermatologist",
+        "category": "doctors",
+        "definition": "a doctor who treats skin diseases",
+        "example": "",
+        "memoryProcess": "4",
+        "options": [
+          {"correct": "a doctor who treats skin diseases"},
+          {"incorrect": "a doctor who treats eye diseases"},
+          {"incorrect": "a doctor who treats children"},
+          {"incorrect": "a doctor who treats heart diseases"}
+        ]
+      },
+      {
+        "id": 18,
+        "word": "pediatrician",
+        "category": "doctors",
+        "definition": "a doctor who treats children",
+        "example": "",
+        "memoryProcess": "4",
+        "options": [
+          {"correct": "a doctor who treats children"},
+          {"incorrect": "a doctor who treats skin diseases"},
+          {"incorrect": "a doctor who treats eye diseases"},
+          {"incorrect": "a doctor who treats heart diseases"}
+        ]
+      },
+      {
+        "id": 19,
+        "word": "cardiologist",
+        "category": "doctors",
+        "definition": "a doctor who treats heart diseases",
+        "example": "",
+        "memoryProcess": "4",
+        "options": [
+          {"correct": "a doctor who treats heart diseases"},
+          {"incorrect": "a doctor who treats skin diseases"},
+          {"incorrect": "a doctor who treats children"},
+          {"incorrect": "a doctor who treats eye diseases"}
+        ]
+      },
+      {
+        "id": 20,
+        "word": "neurologist",
+        "category": "doctors",
+        "definition": "a doctor who treats diseases of the brain and nerves",
+        "example": "",
+        "memoryProcess": "4",
+        "options": [
+          {"correct": "a doctor who treats diseases of the brain and nerves"},
+          {"incorrect": "a doctor who treats skin diseases"},
+          {"incorrect": "a doctor who treats children"},
+          {"incorrect": "a doctor who treats eye diseases"}
+        ]
+      }
+    ]
+  ],
+  "category": [
+    {
+      "id": 1,
+      "name": "adjective"
+    },
+    {
+      "id": 2,
+      "name": "animal"
+    },
+    {
+      "id": 3,
+      "name": "phrasal verb"
+    },
+    {
+      "id": 4,
+      "name": "doctors"
+    }
+  ]
+}

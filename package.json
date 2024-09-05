@@ -9,7 +9,8 @@
     "preview": "vite preview",
     "test:e2e": "cypress run",
     "test:unit": "vitest",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "server": "json-server --watch src/data/db.json --port 5000"
   },
   "dependencies": {
     "@apollo/client": "^3.11.5",
@@ -21,9 +22,11 @@
     "@ionic/vue": "^8.0.0",
     "@ionic/vue-router": "^8.0.0",
     "@vue/apollo-composable": "^4.2.1",
+    "axios": "^1.7.7",
     "graphql": "^16.9.0",
     "graphql-tag": "^2.12.6",
     "ionicons": "^7.0.0",
+    "json-server": "^1.0.0-beta.2",
     "vue": "^3.3.0",
     "vue-router": "^4.2.0"
   },

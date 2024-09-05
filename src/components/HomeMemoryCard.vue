@@ -30,6 +30,8 @@
   const handleStartMemoryTest = () => {
     loading.value = true;
     router.push('memory-test');
+
+    localStorage.setItem('testItem', JSON.stringify(cardItem));
   };
   
 </script>

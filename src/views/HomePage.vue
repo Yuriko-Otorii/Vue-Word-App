@@ -37,9 +37,7 @@
   onMounted(async () => {
     try {
       const response = await axios.get('http://localhost:5000/words');
-      memoryCard.value = response.data;
-      console.log(response.data);
-      
+      memoryCard.value = response.data;      
     } catch (error) {
       console.log(error); 
     }

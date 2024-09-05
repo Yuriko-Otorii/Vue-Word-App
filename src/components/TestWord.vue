@@ -5,7 +5,7 @@
       <p class="text-lg">Choose correct answer</p>
     </div>
     
-    <p><span>{{ index + 1 }}</span>/<span>10</span></p>
+    <p><span>{{ index + 1 }}</span>/<span>{{ wordsLength }}</span></p>
     
     <div class="w-full flex items-center gap-1">
       <ion-icon aria-hidden="true" :icon="timeOutline" class="text-lg" />
@@ -31,7 +31,7 @@
     </div>
 
     <button v-if="!isTimeOver" type="button" class="flex justify-center w-[250px] px-20 py-2 rounded-lg bg-gray-400 text-lg text-white font-bold absolute bottom-[80px]">skip</button>
-    <button v-if="isTimeOver" type="button" @click="handleChangeWordDisplay" class="flex justify-center w-[250px] px-20 py-2 mt-14 rounded-lg bg-[#79eefd] text-lg text-white font-bold">Next</button>
+    <button v-if="isTimeOver" type="button" @click="handleChangeWordDisplay" class="flex justify-center w-[250px] px-20 py-2 absolute bottom-[80px] rounded-lg bg-[#79eefd] text-lg text-white font-bold">Next</button>
   </div>
 
 </template>
@@ -41,10 +41,9 @@
   import { navigateOutline, timeOutline } from 'ionicons/icons';
   import { ref, onMounted, defineProps, defineEmits } from 'vue';
 
-  const emit = defineEmits(['handleChangeWordDisplay', 'startTimer', 'handleAnswered']);
-  const { word, index, isTimeOver } = defineProps(["word", "index", "isTimeOver"]);
+  const emit = defineEmits(['handleChangeWordDisplay', 'startTimer', 'handleAnswered', "handleCorrectCounter"]);
+  const { word, index, isTimeOver, wordsLength } = defineProps(["word", "index", "isTimeOver", 'wordsLength']);
   const isAnswerClicked = ref(false);
-
   const options = word.options;
   const shaffledOptions = options.sort(() => Math.random() - 0.5);
 
@@ -57,9 +56,10 @@
     const btnElems = document.querySelector('.option-wrapper');
     const clickedBtn = btnElems?.children[index] as HTMLElement;
     
-    if (!isAnswerClicked.value){
+    if (!isAnswerClicked.value) {
       if (answer) {
         clickedBtn.classList.add('border-lime-400');
+        emit('handleCorrectCounter');
       } else {
         clickedBtn.classList.add('border-red-500');
         const correctBtn = Array.from(btnElems?.children ?? []).find((btn) => {

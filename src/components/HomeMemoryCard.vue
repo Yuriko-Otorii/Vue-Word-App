@@ -22,9 +22,8 @@
   import { IonButton, IonCard, IonCardContent } from '@ionic/vue';
   import { defineProps, ref } from 'vue';
   import { useRouter } from 'vue-router';
-  import { CardItem } from '@/types/type';
 
-  const { cardItem } = defineProps<{ cardItem: CardItem[] }>();
+  const { cardItem } = defineProps(["cardItem"]);
   const router = useRouter();
   const loading = ref(false);
 

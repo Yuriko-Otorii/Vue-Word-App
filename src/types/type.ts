@@ -5,4 +5,11 @@ export type CardItem = {
   definition: string;
   example: string;
   memoryProcess: string;
+  hide: boolean;
+  options: [
+    {
+      definition: string;
+      isCorrect: boolean;
+    }
+  ];
 };

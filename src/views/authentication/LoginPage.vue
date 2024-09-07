@@ -1,7 +1,7 @@
 <template>
   <ion-content :fullscreen="true" class="ion-padding">
     <h1 class="text-3xl text-[#fff] text-bold absolute top-[15%] left-1/2 transform -translate-x-1/2">Login</h1>
-    <div class="w-[500px] h-[500px] rounded-full bg-[#4289A7] absolute top-[-30%] left-1/2 transform -translate-x-1/2 -z-10"></div>
+    <div class="w-[500px] h-[500px] rounded-full bg-[#4289A7] absolute top-[-33%] left-1/2 transform -translate-x-1/2 -z-10"></div>
 
     <form @submit.prevent="handleSubmit">
       <div class="flex flex-col gap-6 w-72 absolute top-[35%] left-1/2 transform -translate-x-1/2">
@@ -42,6 +42,7 @@
 </template>
 
 <script setup>
+  import { IonContent, IonSpinner } from '@ionic/vue';
   import { ref } from 'vue';
   import { useRouter } from 'vue-router';
   import { useMutation } from '@vue/apollo-composable';
@@ -54,6 +55,8 @@
   const { mutate, loading } = useMutation(loginMutation);
 
   const handleSubmit = async () => {    
+    // router.push('/wordly/home');
+
     try {
       const { data } = await mutate({ email: emailInput.value, password: passwordInput.value });
       localStorage.setItem('token', data.login.token);

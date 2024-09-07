@@ -110,7 +110,7 @@
         isTimeOver.value = true;
         isAnswered.value = false;
       }
-    }, 10);
+    }, 50);
   };
 
   onMounted(async () => {

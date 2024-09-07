@@ -21,7 +21,7 @@
             <ion-select-option v-for="category in categoryList" :key="category" :value="category" class="bg-white">{{ category }}</ion-select-option>
           </ion-select>
 
-          <button @click="openModal" class="custom-btn w-fit flex align-center justify-end gap-1 rounded-lg px-1 py-2 mt-2 self-end">
+          <button @click.prevent="openModal" class="custom-btn w-fit flex align-center justify-end gap-1 rounded-lg px-1 py-2 mt-2 self-end">
             <ion-icon aria-hidden="true" :icon="addOutline" class="text-gray-500" />
             <span class="text-gray-500">Create new category</span>
           </button>
@@ -48,7 +48,13 @@
           <input v-model="exampleInput" class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="example" type="text" placeholder="example">
         </div>
 
-        <button type="submit"  class="flex justify-center w-[250px] px-20 py-2 rounded-lg absolute bottom-[30%] left-1/2 transform -translate-x-1/2 bg-[#79eefd] text-lg text-white font-bold border">Register</button>
+        <button
+          type="submit"
+          :disabled="!wordInput || !definitionInput || !categorySelect"
+          class="flex justify-center w-[250px] px-2 py-2 rounded-lg absolute bottom-[30%] left-1/2 transform -translate-x-1/2 bg-[#79eefd] text-lg text-white font-bold disabled:opacity-50"
+        >
+          Register
+        </button>
       </form>
     </ion-content>
   </ion-page>
@@ -89,7 +95,7 @@
 
   const handleWordSubmit = async () => {
     try {
-      const response = await axios.post('http://localhost:5000/words', {
+      const response = await axios.post('http://localhost:5000/words/1', {
         word: wordInput.value,
         definition: definitionInput.value,
         example: exampleInput.value,

@@ -6,13 +6,13 @@
       </ion-toolbar>
     </ion-header>
     <ion-content :fullscreen="true">
-      <HomeMemoryCard v-for="(card, index) in memoryCard" :cardItem="card" :key="index" />
+      <HomeMemoryCard v-for="(card, index) in memoryCard" :key="index" :cardItem="card" :loading="loading" @handleLoadidng="handleLoadidng" />
     </ion-content>
   </ion-page>
 </template>
 
 <script setup lang="ts">
-  import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent } from '@ionic/vue';
+  import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent, onIonViewWillEnter } from '@ionic/vue';
   import HomeMemoryCard from '@/components/HomeMemoryCard.vue';
   import axios from 'axios';
   // import { getMemoryCardQuery } from '@/graphql/query/getMemoryCard';
@@ -21,6 +21,8 @@
   // import { useQuery } from '@vue/apollo-composable';
 
   const memoryCard = ref([]);
+  const loading = ref(false);
+
 
   // const { result, loading } = useQuery(getMemoryCardQuery);
 
@@ -34,6 +36,10 @@
   //   }
   // });
 
+  const handleLoadidng = () => {
+    loading.value = true;
+  }
+
   onMounted(async () => {
     try {
       const response = await axios.get('http://localhost:5000/words');
@@ -41,6 +47,10 @@
     } catch (error) {
       console.log(error); 
     }
+  });
+
+  onIonViewWillEnter(() => {
+    loading.value = false;
   });
 
 </script>

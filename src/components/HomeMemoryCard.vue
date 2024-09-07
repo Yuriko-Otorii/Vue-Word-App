@@ -10,8 +10,9 @@
         @click="handleStartMemoryTest"
         class="w-[150px] h-[45px] py-.5 text-white font-bold bg-[#5ed0e0] rounded-lg mt-6 hover:opacity-80"
       >
-        <span v-if="!loading">Start Now</span>
-        <ion-spinner v-if="loading" name="crescent" class="text-white"></ion-spinner>
+        <span>Start Now</span>
+        <!-- <span v-if="!loading">Start Now</span>
+        <ion-spinner v-if="loading" name="crescent" class="text-white"></ion-spinner> -->
       </ion-button>
     </ion-card-content>
   </ion-card>
@@ -19,20 +20,23 @@
 </template>
 
 <script setup lang=ts>
-  import { IonButton, IonCard, IonCardContent, IonSpinner } from '@ionic/vue';
-  import { defineProps, ref } from 'vue';
+  import { IonButton, IonCard, IonCardContent, } from '@ionic/vue';
+  import { defineProps, defineEmits } from 'vue';
   import { useRouter } from 'vue-router';
 
-  const { cardItem } = defineProps(["cardItem"]);
+  const { cardItem } = defineProps(["cardItem", "loading"]);
+  const emit = defineEmits(["handleLoadidng"]);
   const router = useRouter();
-  const loading = ref(false);
+  // const loading = ref(false);
 
   const handleStartMemoryTest = () => {
-    loading.value = true;
+    emit('handleLoadidng');
     router.push('memory-test');
 
     localStorage.setItem('testItem', JSON.stringify(cardItem));
   };
+
+
   
 </script>
 

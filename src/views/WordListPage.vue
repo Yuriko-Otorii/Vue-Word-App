@@ -44,17 +44,13 @@
           </ion-list>
           <WordDetail v-if="phase === 'wordDetail'" :word="word" :clickedWord="clickedWord"/>
         </div>
-
-        
-
       </div>
-  
     </ion-content>  
   </ion-page>
 </template>
 
 <script setup lang="ts">
-    import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent, IonList } from '@ionic/vue';
+    import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent, IonList, IonIcon } from '@ionic/vue';
     import { arrowBack } from 'ionicons/icons';
     import { ref, onMounted } from 'vue';
     import axios from 'axios';
@@ -128,8 +124,6 @@
 
         categoryList.value = response1.data;
         words.value = response2.data;
-        console.log(response2.data);
-
         const [words1, words2, words3, words4] = words.value;
 
         wordsInAsjectives.value = words1;

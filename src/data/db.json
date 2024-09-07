@@ -736,7 +736,61 @@
           }
         ]
       }
-    ]
+    ],
+    {
+      "id": "ad57",
+      "word": "",
+      "definition": "",
+      "example": "",
+      "category": "",
+      "memoryProcess": "1",
+      "hide": true,
+      "options": [
+        {
+          "definition": "",
+          "isCorrect": true
+        },
+        {
+          "definition": "to succeed in avoiding punishment for something",
+          "isCorrect": false
+        },
+        {
+          "definition": "a large African animal with a very long neck and long legs",
+          "isCorrect": false
+        },
+        {
+          "definition": "a doctor who treats children",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": "4b98",
+      "word": "Dog",
+      "definition": "An animal",
+      "example": "",
+      "category": "Animal",
+      "memoryProcess": "1",
+      "hide": true,
+      "options": [
+        {
+          "definition": "An animal",
+          "isCorrect": true
+        },
+        {
+          "definition": "to succeed in avoiding punishment for something",
+          "isCorrect": false
+        },
+        {
+          "definition": "a large African animal with a very long neck and long legs",
+          "isCorrect": false
+        },
+        {
+          "definition": "a doctor who treats children",
+          "isCorrect": false
+        }
+      ]
+    }
   ],
   "category": [
     {
@@ -758,6 +812,10 @@
     {
       "id": "5",
       "name": "doctors"
+    },
+    {
+      "id": "850b",
+      "name": "Business"
     }
   ]
 }
